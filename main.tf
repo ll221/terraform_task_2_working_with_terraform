@@ -21,7 +21,7 @@ resource "azurerm_storage_container" "example" {
 
 data "archive_file" "code_archive" {
   type        = "zip"
-  source_dir  = "${path.module}"
+  source_dir  = path.module
   output_path = "${path.module}/code_archive.zip"
 
   excludes = [
