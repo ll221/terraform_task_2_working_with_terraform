@@ -1,29 +1,25 @@
 variable "resource_group_name" {
-  description = "Назва Resource Group в Azure"
   type        = string
-  default     = "example-resources"
+  description = "Name of the Azure resource group"
 }
 
 variable "location" {
-  description = "Регіон Azure для ресурсів"
   type        = string
+  description = "Azure region"
   default     = "West Europe"
 }
 
 variable "storage_account_name" {
-  description = "Назва Storage Account (лише малі літери й цифри, 3-24 символи)"
   type        = string
-  default     = "examplestorageacc"
+  description = "Globally unique name of the storage account (lowercase letters/numbers, 3-24 chars)"
 }
 
 variable "container_name" {
-  description = "Назва Storage Container"
   type        = string
-  default     = "example-container"
+  description = "Name of the storage container"
 }
 
 variable "blob_name" {
-  description = "Назва Storage Blob"
   type        = string
-  default     = "example-code-archive.zip"
+  description = "Name of the storage blob"
 }
